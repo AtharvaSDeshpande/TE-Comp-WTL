@@ -1,1 +1,1 @@
-# TE-Comp-WT-and-WTL
+# TE Computer Web Technology and Web Technology Lab
