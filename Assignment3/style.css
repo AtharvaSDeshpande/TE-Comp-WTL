@@ -1,0 +1,30 @@
+
+* {
+    display: grid;
+    place-items: center;
+}
+LIBRARY {
+    color: white;
+    background-color : rgb(120, 161, 250);
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+heading, title, author, publisher, edition, price, year {
+    display : grid;
+    font-size: 20px;
+    color: rgb(58, 57, 57);
+}
+heading {
+    width: 100vw;
+    color: rgb(49, 9, 194);
+    font-size : 40px;
+    background-color : rgb(12, 218, 245);
+    text-align: center;
+}
+title {
+    font-size : 25px;
+    
+    font-weight : bold;
+}

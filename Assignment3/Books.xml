@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href = "style.css"?>
+<LIBRARY>
+    <heading>Welcome To Library Genesis </heading>
+    <book>
+        <title>Title -: Theory of Computation</title>
+        <author>Author -: Anonymous</author>
+        <publisher>Publisher -: Wiley</publisher>
+        <edition>Edition -: 7</edition>
+        <year>Year: 2011</year>
+        <price> Price -: 500</price>
+    </book>
+    <book>
+        <title>Title -: Design and Analysis of Algorithm</title>
+        <author>Author -: Anonymous</author>
+        <publisher>Publisher -: Pearson</publisher>
+        <edition>Edition -: 9</edition>
+        <year>Year: 2015</year>
+        <price>Price -: 800</price>
+    </book>
+    <book>
+        <title>Title -: Computer Networks</title>
+        <author>Author -: Karington</author>
+        <publisher>Publisher -: Pearson</publisher>
+        <edition>Edition -: 5</edition>
+        <year>Year: 2000</year>
+        <price>Price -: 400</price>
+    </book>
+    <book>
+        <title>Title -: Database Management System</title>
+        <author>Author -: Sudhansu</author>
+        <publisher>Publisher -: Oxford</publisher>
+        <edition>Edition -: 10</edition>
+        <year>Year: 2020</year>
+        <price>Price -: 600</price>
+    </book>
+</LIBRARY>
