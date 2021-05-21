@@ -1,0 +1,76 @@
+<!-- Write a program to design registration form for students by using HTML and CSS. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration Form</title>
+</head>
+
+<body class="formBody">
+    <h1 class="formTitle">Student Registration Form</h1>
+    <div class = "createAccount">
+        <div class="createAccount__left">
+            <form class="studentForm">
+                <div class="inputBlock">
+                    <label class="inputBlock__label"><b>Enter your First Name</b></label>
+                    <input class="inputBlock__input" type="text" />
+                </div>
+                <div class="inputBlock">
+                    <label class="inputBlock__label"><b>Enter your Last Name</b></label>
+                    <input class="inputBlock__input" type="text" />
+                </div>
+                <div class="inputBlock">
+                    <label class="inputBlock__label"><b>Enter your Date of Birth</b></label>
+                    <input class="inputBlock__input" type="date" />
+                </div>
+                <div class="inputBlock">
+                    <label class="inputBlock__label"><b>Enter your Email</b></label>
+                    <input class="inputBlock__input" type="email" />
+                </div>
+                <div class="inputBlock">
+                    <label class="inputBlock__label"><b>Enter your Mobile Number</b></label>
+                    <input class="inputBlock__input" type="tel" />
+                </div>
+                <div class="inputBlock">
+                    <label class="inputBlock__label"><b>Enter Password</b></label>
+                    <div>
+                        <div class="passwordInputBox">
+                            <input id="passwordinput" class="inputBlock__input inputBlock__password" type="password" />
+                            <div class="inputBlock__input__button"><img src="images/hidden.svg" alt="" /></div>
+    
+                        </div>
+                        <p class="extraLabel">Password must be 8 characters or longer</label>
+                    </div>
+                </div>
+                <div class="inputBlock">
+                    <label class="inputBlock__label"><b>Confirm Password</b></label>
+                    <div>
+                        <div class="passwordInputBox">
+                            <input id="passwordinput" class="inputBlock__input inputBlock__password" type="password" />
+                            <div class="inputBlock__input__button"><img src="images/hidden.svg" alt="" /></div>
+    
+                        </div>
+                    </div>
+                </div>
+                <button class="createAccount__left_submit">
+                    <p>
+                        Create Account
+                    </p>
+                </button>
+            </form>
+        </div>
+        <div class = "createAccount__right">
+            <img class = "createAccount__right_img" src = "images/rightLogo.png"/>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- -->
