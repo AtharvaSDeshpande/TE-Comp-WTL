@@ -1,0 +1,20 @@
+body {
+    display: grid;
+    place-items: center;
+    background-color: cadetblue;
+}
+h1 {
+    border-bottom: 1px solid black;
+}
+
+td,th {
+    border: 2px solid black;
+    text-align: center;
+}
+
+input {
+    background-color: inherit;
+    appearance: textfield;
+    border: none;
+    text-align: center;
+}
