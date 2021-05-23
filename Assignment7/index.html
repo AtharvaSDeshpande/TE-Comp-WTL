@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+<script>
+    function insert() {
+        var i1 = (document.getElementById("i1")).value;
+        var i2 = (document.getElementById("i2")).value
+        var i3 = (document.getElementById("i3")).value
+        var i4 = (document.getElementById("i4")).value
+        var i5 = (document.getElementById("i5")).value
+        // alert(i1 + "  "+i2 +"  "+i3+ "  "+i4+ "  "+i5)
+        var xmlhttp = new XMLHttpRequest();
+        // xmlhttp.onreadystatechange = function () {
+        //     if (this.readyState == 4 && this.status == 200) {
+        //         document.getElementById("txtHint").innerHTML = this.responseText;
+        //     }
+        // };
+        xmlhttp.open("GET", "insert.php?name=" + i1 + "&designation=" + i2 + "&mobile=" + i3 + "&username=" + i4 + "&password=" + i5 + "&insert=INSERT", true);
+        xmlhttp.send();
+        // show();
+
+    }
+
+    function show() {
+      
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("details").innerHTML = this.responseText;
+            }
+        }
+        xmlhttp.open("GET", "show.php", true);
+        xmlhttp.send();
+    }       
+
+    show();
+    
+    // show();
+</script>
+</head>
+
+<body>
+    <div class="" id="blog">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid pr-2">
+                <a class="navbar-brand  text-white" href="">
+                    <h2>Employee Database</h2>
+                </a>
+            </div>
+        </nav>
+
+        <div class="bg-dark text-white col-md-4 float-right pr-5 mr-0 position-sticky ">
+
+            <!-- Blog Search Well -->
+            
+
+            
+           
+            <h4>Add new Employee</h4>
+            <br>
+
+
+
+            <div class="well">
+                <div class="form-group">
+                    <label for="name">Enter Name</label>
+                    <input id="i1" type="text" class="form-control" name="name" required>
+                    <hr class="bg-light">
+                    <label for="designation">Enter Designation</label>
+                    <input id="i2" type="text" class="form-control" name="designation" required>
+                    <hr class="bg-light">
+                    <label for="mobile">Enter Mobile Number</label>
+                    <input id="i3" type="tel" class="form-control" name="mobile" required>
+                    <hr class="bg-light">
+                    <label for="username">Enter Email</label>
+                    <input id="i4" type="username" class="form-control" name="username" required>
+                    <hr class="bg-light">
+                    <label for="password">Enter Password</label>
+                    <input id="i5" type="password" class="form-control" name="password" required>
+                    <hr class="bg-light">
+                    <div class="form-group">
+                        <div class="d-flex justify-content-center">
+                            <input onclick="insert(); show()" class="btn btn-primary mb-3" type="submit" name="insert"
+                                value="INSERT">
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <hr class="bg-light">
+
+            </div>
+
+
+        </div>
+        <div class="ml-5" id="blog">
+            <div class="">
+                <h1 class="page-header">
+                    Employee Details </h1>
+                <hr class="bg-primary">
+               <div id = "details">
+
+               </div>
+
+
+
+
+            </div>
+
+        </div>
+        <!--  Footer of the document-->
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
