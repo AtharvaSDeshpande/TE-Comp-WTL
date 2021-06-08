@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src = "script.js"></script>
+    <title>Login</title>
+</head>
+<body class="formBody grd">
+<h1 class="formTitle">Student Login</h1>
+<br><br><br><br>
+    <div class = "createAccount">
+        <div class="createAccount__left">
+           <form action = "login" method = "post">
+                
+               
+                
+                <div class="inputBlock">
+                    <label for = "email" class="inputBlock__label"><b>Enter your Email</b></label>
+                    <input id="emailInput" name="email" class="inputBlock__input" type="email" required />
+                    <p class="extraLabel" id = "emailExtraLabel" style="display:none;">Please Enter a valid Email ID</p>
+                    
+                </div>
+              
+                <div class="inputBlock">
+                    <label for = "password" class="inputBlock__label"><b>Enter Password</b></label>
+                    <div>
+                        <div class="passwordInputBox">
+                            <input name="password" id="passwordInput" class="inputBlock__input inputBlock__password" type="password" required />
+                            <div class="inputBlock__input__button" onclick="showPassword()"><img src="images/hidden.svg" alt="" /></div>
+    
+                        </div>
+                        <p class="extraLabel" id = "passwordExtraLabel" style="display:none;">Password must be 8 characters or longer</p>
+                    </div>
+                </div>
+                
+                <button  class="createAccount__left_submit">
+                    <p>
+                        Login
+                    </p>
+                  
+                </button>
+                  <a href = "index.html" style = "color:rgb(155, 5, 5);font-size: 20px;margin-left: 20px;" >
+                    	Create Account
+                  </a>
+        </form>
+        </div>
+        <div class = "createAccount__right">
+            <img class = "createAccount__right_img" src = "images/rightLogo.png"/>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br><br><br>
+    
+</body>
+</html>
